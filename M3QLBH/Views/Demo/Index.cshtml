@@ -1,0 +1,24 @@
+﻿ <!--Khai bao ben tren de tai su dung nhieu lan ben duoi-->
+@*Co the khai bao trong Webconfig cua View de su dung chung -> Do do can khai bao rieng nua*@
+@*@using M3QLBH.Models;*@
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Admin1Layout.cshtml";
+    var chungLoais = ViewBag.ChungLoais as List<ChungLoai>;
+}
+
+<h2>Demo : Test Data model</h2>
+<ul>
+    <!--Kieu du lieu dynamic nen ko co auto complete-->
+    <!--
+      + Nue chua biet kieu du lieu thi dat var
+    -->
+    @*Dang sd  M3QLBH.Models*@
+
+    @foreach (var item in chungLoais)
+    {
+        <li>@item.Ten</li>
+    }
+
+</ul>
