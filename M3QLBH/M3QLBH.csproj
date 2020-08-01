@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>M3QLBH</RootNamespace>
     <AssemblyName>M3QLBH</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -27,6 +27,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>3.7</TypeScriptToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,6 +51,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -57,11 +59,8 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -106,6 +105,7 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -1918,6 +1918,8 @@
     <Content Include="Images\bg_2.jpg" />
     <Content Include="Images\bg_3.jpg" />
     <Content Include="Images\bg_6.jpg" />
+    <Content Include="Images\giay1.jpg" />
+    <Content Include="Images\non1.jpg" />
     <Content Include="Models\QLBanHang3mvc.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>QLBanHang3mvc.edmx</DependentUpon>
@@ -1979,6 +1981,7 @@
     <Content Include="Photos\DSC-WX200-1.jpg" />
     <Content Include="Photos\DSC-WX200-2.jpg" />
     <Content Include="Photos\DSC-WX200-4.jpg" />
+    <Content Include="Photos\giay1.jpg" />
     <Content Include="Photos\gz-e10-2.jpg" />
     <Content Include="Photos\gz-e10-3.jpg" />
     <Content Include="Photos\gz-e10.jpg" />
@@ -2037,6 +2040,7 @@
     <Content Include="Photos\máy-quayphim-JVC-GZ-MS150-anh4%281%29.jpg" />
     <Content Include="Photos\NIKON-COOLPIX-P600.png" />
     <Content Include="Photos\noImage.jpg" />
+    <Content Include="Photos\non1.jpg" />
     <Content Include="Photos\panasonic-6581-108713-1-product.jpg" />
     <Content Include="Photos\panasonic-6617-918713-1-product.jpg" />
     <Content Include="Photos\panasonic-7588-296343-1-product.jpg" />
