@@ -28,9 +28,8 @@ namespace M3QLBH.Controllers
         public ActionResult _HangHoaMoiPartial()
         {
             List<HangHoa> items = db.HangHoas
-                                 .Where(p => p.LoaiID)
                                  .OrderByDescending(p => p.ID)
-                                 .Take(8)
+                                 .Take(6)
                                  .ToList();
             ViewBag.HangHoas = items;
             return PartialView();
